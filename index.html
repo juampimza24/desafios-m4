@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi sitio</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/image 3.png" alt="Logo" class="logo" />
+
+      <!-- Menú de navegación para escritorio -->
+      <nav class="nav">
+        <a class="item-nav" href="#about">quién soy</a>
+        <a class="item-nav" href="#servicios">servicios</a>
+        <a class="item-nav" href="#formulario">escribime</a>
+      </nav>
+
+      <!-- Botón menú hamburguesa (solo visible en mobile) -->
+      <button class="menu-btn">☰</button>
+    </header>
+
+    <section class="hero">
+      <h1 class="titulo">Bienvenidos a mi site</h1>
+      <img src="img/image.png" alt="Foto personal" class="perfil" />
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="titulo-about">Soy Juan Pablo</h2>
+      <div class="about-contenido">
+        <img class="img-about" src="img/check (1) 1.png" alt="check" />
+        <p class="p-about">
+          Soy una persona apasionada por la computación y la tecnología. Me
+          dedico al desarrollo de soluciones informáticas, desde la programación
+          de software hasta el soporte técnico y la administración de sistemas.
+          Disfruto resolver problemas, automatizar procesos y aprender
+          constantemente sobre nuevas herramientas y lenguajes. Mi objetivo es
+          aplicar la tecnología para mejorar la vida de las personas y optimizar
+          el trabajo en distintos entornos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios">
+      <h2 class="titulo-servicios">Mis servicios</h2>
+      <div class="servicios-contenedor">
+        <div class="servicio">
+          <img src="img/desktop 1.png" alt="PC1" />
+          <h3 class="subtitulos-servicios">Análisis</h3>
+          <p class="descrip-servicios">
+            Me dedico a la computación, especialmente al análisis de sistemas.
+            Me gusta entender cómo funcionan las cosas y buscar soluciones
+            prácticas usando tecnología.
+          </p>
+        </div>
+        <div class="servicio">
+          <img src="img/desktop 1.png" alt="PC2" />
+          <h3 class="subtitulos-servicios">Programación</h3>
+          <p class="descrip-servicios">
+            Me gusta crear soluciones con código, resolver problemas y aprender
+            nuevas tecnologías todo el tiempo.
+          </p>
+        </div>
+        <div class="servicio">
+          <img src="img/desktop 1.png" alt="PC3" />
+          <h3 class="subtitulos-servicios">Testeo</h3>
+          <p class="descrip-servicios">
+            Me gusta encontrar errores, asegurarme de que todo funcione bien y
+            ayudar a mejorar la calidad de las aplicaciones.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Formulario -->
+    <section class="formulario">
+      <form>
+        <div class="form-header-row">
+          <h2 class="titulo-form">Escribime</h2>
+        </div>
+        <p class="descrip-form">Nombre</p>
+        <input type="text" />
+        <p class="descrip-form">Email</p>
+        <input type="email" />
+        <p class="descrip-form">Mensaje</p>
+        <textarea></textarea>
+        <button class="button-form" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-contenedor">
+        <img src="img/image 3 (1).png" alt="Logo footer" class="logo-footer" />
+        <div class="redes">
+          <div class="red">
+            <img
+              src="img/instagram.png"
+              alt="Instagram"
+              class="logos-socials"
+            />
+            <a class="links" href="#">Instagram</a>
+          </div>
+          <div class="red">
+            <img
+              src="img/Vector (1).png"
+              alt="LinkedIn"
+              class="logos-socials"
+            />
+            <a class="links" href="#">LinkedIn</a>
+          </div>
+          <div class="red">
+            <img src="img/Vector.png" alt="GitHub" class="logos-socials" />
+            <a class="links" href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const nav = document.querySelector(".nav");
+
+      menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("show");
+        if (nav.classList.contains("show")) {
+          menuBtn.textContent = "X";
+        } else {
+          menuBtn.textContent = "☰";
+        }
+      });
+    </script>
+  </body>
+</html>
